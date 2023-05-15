@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+        integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="light-box">
+        <div class="container">
+            <div class="header">
+                <div class="photographer">
+                    <i class="fa-camera fa-solid"></i>
+                    <span>Maria Lozveneya</span>
+                </div>
+                <div class="buttons">
+                    <button type="button"><i class="fa-solid fa-download" id="download-btn"></i></button>
+                    <button type="button" id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="prew-img">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="search-box">
+        <img src="img/search-img.jpg" alt="search-img" srcset="">
+        <div class="content">
+            <span>Image Gallery with JavaScript</span>
+            <span>Search and download any images within a second</span>
+            <div class="search-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Image" id="searchInput">
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <ul class="images">
+        </ul>
+        <button class="load-more" type="button">Load More</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
